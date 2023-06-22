@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf8">
+	<link rel="stylesheet" href="Style1.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>ホーム画面</title>
+</head>
+
+<body>
+<div class="mx-auto text-center" style="width: 70%;">
+	<h2>商品管理画面</h2>
+	<p></p>
+	<div class="row">
+		<div class="col-xs-6 col-md-4"></div>
+		<div class="col-xs-6 col-md-4">
+			<form action="./Controller" method="post">
+				<h5>商品ID：</h5><input type="number" name="id" class="form-control" required/></input>
+		</div>
+	</div>
+	</br>
+
+	<div class="row">
+		<div class="col-xs-6 col-md-4"></div>
+		<div class="col-xs-6 col-md-4">
+			<h5>商品名：</h5><input type="text" name="productName" size="50" class="form-control"required /></input>
+		</div>
+	</div>
+	</br>
+
+	<div class="row">
+		<div class="col-xs-6 col-md-4"></div>
+		<div class="col-xs-6 col-md-4">
+			<h5>価格：</h5><input type="number" name="price" class="form-control" required /></input>
+		</div>
+	</div>
+
+	</br>
+
+	<div class="row">
+
+		<div class="col-md-1 offset-5">
+			<input type="submit" value="登録" class="btn btn-primary"></input>
+		</div>
+
+		<div class="col-md-1">
+			<input type="reset" value="取消" class="btn btn-danger"></input></br>
+
+		</div>
+	</div>
+	
+	</form>
+	
+	<div class="row">
+	<form method="post" action="./Show">
+	<div class="col-md-1 offset-5">
+	<input type ="submit" value="表示" class="btn btn-success"></input>
+	</div>
+	</form>
+	
+		<button = onclick="location.href='http://localhost:8080/CRUD%E7%B7%B4%E7%BF%92/%E5%89%8A%E9%99%A4%E7%94%BB%E9%9D%A2.html'" class="btn btn-dark">削除</button>
+	
+</div>
+</div>
+
+		
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
